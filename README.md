@@ -21,25 +21,39 @@ Run from jupyter notebook and installed all packages again from jupyer notebook
 ## 1. Dependencies 
 First, dependencies must be installed to run any of the code.
 
-
+Eventually: !pip3 install numpy==1.20.0 --force-reinstall
 
 Pip install:
 ```
 
+Using Ubuntu:
+
 MongoDB
 sudo apt-get mongo (mongo-org didnt worked for me)
-
+Websocket
 Bitmex-ws
 pip3 install bitmex-ws
 Pandas
-
 Arctic
 !pip3 install git+https://github.com/man-group/arctic.git
-
-Websocket
-Json
+Test: from arctic import Arctic
+Json (already installed in ubuntu)
 
 ```
+
+If mongodb makes problems; try installing using docker:
+docker --version
+sudo apt-get remove docker docker-engine docker.io (if needed)
+sudo apt-get update
+sudo apt install docker.io
+
+Than:
+sudo docker pull mongo
+sudo docker run -d -p 27017:27017 mongo
+pip install arctic
+
+Test:
+from arctic import Arctic
 
 ## 2. Data
 Next, the data is collected and stored in a Arctic Tick Database by running main.py. 

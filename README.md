@@ -5,12 +5,24 @@ The goal of this project is to explore the market microstructure of Bitcoin trad
 ## 1. Dependencies 
 First, dependencies must be installed to run any of the code.
 
+
+
 Pip install:
 ```
+
+MongoDB
+sudo apt-get mongo (mongo-org didnt worked for me)
+
+Bitmex-ws
+pip3 install bitmex-ws
 Pandas
+
 Arctic
+!pip3 install git+https://github.com/man-group/arctic.git
+
 Websocket
 Json
+
 ```
 
 ## 2. Data

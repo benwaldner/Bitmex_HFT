@@ -2,6 +2,20 @@
 
 The goal of this project is to explore the market microstructure of Bitcoin traded on BitMEX. 
 
+Notes for Visualizations.ipynb:
+I changed upper and lower price-rage to for example
+upper = 20000
+lower = 15000
+
+Changed to BTCUSD_ob from tick_store ticker output one cell above
+(library.list_symbols())
+df = library.read('BTCUSD_ob')
+
+I imported also:
+from pandas.plotting import register_matplotlib_converters
+
+Run from jupyter notebook and installed all packages again from jupyer notebook
+
 ## 1. Dependencies 
 First, dependencies must be installed to run any of the code.
 

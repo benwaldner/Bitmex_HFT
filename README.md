@@ -2,6 +2,8 @@
 
 The goal of this project is to explore the market microstructure of Bitcoin traded on BitMEX. 
 
+
+# Change-log:
 Notes for Visualizations.ipynb:
 I changed upper and lower price-rage to for example
 upper = 20000
